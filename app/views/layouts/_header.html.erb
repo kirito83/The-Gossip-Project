@@ -1,0 +1,21 @@
+<header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="container">
+    <%= link_to "TGP", root_path, id: "logo" %>
+    <nav>
+      <ul class="nav navbar-nav navbar-right">
+        <li> <%= link_to "Accueil", root_path %> </li>
+        <li> <%= link_to "Nouveau Gossip", new_gossip_path %> </li>
+        <% if moussaillon_signed_in? %>
+        <li> <%= link_to "Déconnexion", destroy_moussaillon_session_path, method: :delete %> </li>
+        <% else %>
+        <li>
+          <%= link_to "Connexion", new_moussaillon_session_path %>
+        </li>
+        <li>
+          <%= link_to "Inscription", new_moussaillon_registration_path %>
+        </li>
+        <% end %>
+      </ul>
+    </nav>
+  </div>
+</header>

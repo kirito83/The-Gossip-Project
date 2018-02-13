@@ -1,0 +1,14 @@
+<h1>Nouveau gossip</h1>
+
+<br/>
+
+<%= form_for @gossip do |f| %>
+<div class='form-group'>
+	<label>Contenu du gossip</label>
+	<%= f.text_field :content, class: 'form-control' %>
+</div>
+<div class='form-group'>
+	<a type='submit' class='btn btn-success'>Poster le gossip</a>
+	<a href='<%= root_path %>' class='btn btn-primary'>Revenir à la liste des gossips</a>
+</div>
+<% end %>

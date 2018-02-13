@@ -1,0 +1,38 @@
+<h1><u>Liste des gossips</u></h1>
+
+<br/>
+
+<table class='table'>
+	<thead>
+		<tr>
+			<td><strong>Créateur</strong></td>
+			<td><strong>Contenu</strong></td>
+			<td><strong>Date</strong></td>
+			<td><strong>Actions</strong></td>
+		</tr>
+	</thead>
+	<tbody>
+		<% @gossips.each do |gossip| %>
+		<tr>
+			<td>
+				<% if gossip.creator %>
+				<%= gossip.creator.username %>
+				<% else %>
+				Profil supprimé
+				<% end %>
+			</td>
+			<td><%= gossip.content %></td>
+			<td><%= gossip.created_at %></td>
+			<td>
+				<a href='<%= gossip_path(gossip.id) %>' class='btn btn-danger' data-confirm='Etes vous sur?' data-method='DELETE'>Supprimer</a>
+			</td>
+		</tr>
+		<% end %>
+	</tbody>
+</table>
+
+<br/>
+
+<div class='center'>
+	<a href='<%= new_gossip_path %>' class='btn btn-success'>Poster un nouveau gossip</a>
+</div>
