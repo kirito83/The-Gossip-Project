@@ -3,7 +3,7 @@
 class DeviseCreateMoussaillons < ActiveRecord::Migration[5.1]
   def change
     create_table :moussaillons do |t|
-      t.string :anonymous_username, null: false, default: ""
+      t.string :username, null: false, default: ""
 
       ## Database authenticatable
       t.string :email,              null: false, default: ""

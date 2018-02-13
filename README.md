@@ -1,24 +1,25 @@
-# README
+# Bonjour !
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Voici les instructions pour votre correction
 
-Things you may want to cover:
+### 1. Clone le repo
 
-* Ruby version
+### 2. Execute la commande
 
-* System dependencies
+> > `bundle install --without production`
 
-* Configuration
+## J'ai effectué les tests 5.1 et 5.4 avec Rspec
 
-* Database creation
+### 3. Vous pouvez donc vérifier cela en executant la commande
 
-* Database initialization
+> > `bundle exec rspec`
 
-* How to run the test suite
+## Enfin, j'ai effectué les tests 5.2 et 5.3 'normalement'
 
-* Services (job queues, cache servers, search engines, etc.)
+#### (Ainsi que d'autres tests)
 
-* Deployment instructions
+### 4. Vous pouvez executer les tests avec la commande
 
-* ...
+> > `rails test`
+
+## Bonne journée !
