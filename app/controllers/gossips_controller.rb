@@ -20,7 +20,6 @@ class GossipsController < ApplicationController
 	def create
 		@moussaillon = current_moussaillon
 		@gossip = @moussaillon.gossips.new(gossip_params)
-  	# @gossip.creator = ?
   	if @gossip.save
   		flash[:success] = "Le gossip a bien été créé !"
   		redirect_to gossips_path
