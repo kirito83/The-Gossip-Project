@@ -3,7 +3,7 @@ class GossipsController < ApplicationController
 		if moussaillon_signed_in?
 			@gossips = Gossip.all
 		else
-			flash[:error] = 'Vous devez vous connecter pour créer un nouveau gossip'
+			flash[:danger] = 'Vous devez vous connecter pour voir les gossips'
 			redirect_to root_path
 		end
 	end
@@ -12,7 +12,8 @@ class GossipsController < ApplicationController
 		if moussaillon_signed_in?
 			@gossip = Gossip.new
 		else
-			redirect_to new_moussaillon_session_path
+			flash[:danger] = 'Vous devez vous connecter pour créer un nouveau gossip'
+			redirect_to root_path
 		end
 	end
 
