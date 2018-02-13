@@ -4,13 +4,15 @@
 
 ### 1. Clone le repo
 
-### 2. Execute la commande
+### 2. Vas dans le repo
+
+### 3. Execute la commande
 
 > > `bundle install --without production`
 
 ### NB : J'ai effectué les tests 5.1 et 5.4 avec Rspec
 
-### 3. Vous pouvez donc vérifier cela en executant la commande
+### 4. Vous pouvez donc vérifier cela en executant la commande
 
 > > `bundle exec rspec`
 
@@ -18,7 +20,7 @@
 
 #### (Ainsi que d'autres tests)
 
-### 4. Vous pouvez executer les tests avec la commande
+### 5. Vous pouvez executer les tests avec la commande
 
 > > `rails test`
 
