@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 20180213114122) do
   end
 
   create_table "moussaillons", force: :cascade do |t|
-    t.string "username", default: "", null: false
+    t.string "anonymous_username", default: "", null: false
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "reset_password_token"
