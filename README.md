@@ -8,13 +8,13 @@
 
 > > `bundle install --without production`
 
-#### J'ai effectué les tests 5.1 et 5.4 avec Rspec
+### NB : J'ai effectué les tests 5.1 et 5.4 avec Rspec
 
 ### 3. Vous pouvez donc vérifier cela en executant la commande
 
 > > `bundle exec rspec`
 
-#### Enfin, j'ai effectué les tests 5.2 et 5.3 'normalement'
+### NB : Enfin, j'ai effectué les tests 5.2 et 5.3 'normalement'
 
 #### (Ainsi que d'autres tests)
 
