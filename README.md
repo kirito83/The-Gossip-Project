@@ -24,4 +24,8 @@
 
 > > `rails test`
 
+___
+
+#### PS : Le code pour les VIP est `GOSSIP_2018` ;)
+
 ## Bonne journée !
